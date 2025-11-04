@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Jawahar Navodaya Vidyalaya (JNV) Data Analysis & Mapping Project
 
-## Getting Started
+An end-to-end data analysis and visualization project that maps **653 Jawahar Navodaya Vidyalayas (JNVs)** across India and derives insights from psychometric and educational datasets. The project provides district-wise, region-wise, and demographic-wise analysis along with a live interactive map and dashboards.
 
-First, run the development server:
+## 🗂️ Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Data Collection**: API extraction from UDISE+ portal.
+- **Data Cleaning**: Standardizing districts, reshaping the dataset.
+- **Data Merge**: Linking JNV datasets with student psychometric datasets.
+- **Exploratory Data Analysis (EDA)**: Age, gender, region patterns.
+- **Interest & Abilities Mapping**: Holland Codes + Aptitude clusters.
+- **Power BI Dashboard**: Visual representation of outcomes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Live Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🌍 **JNV Map** (React + Google Maps API):  
+  Hosted on Netlify → [https://jnvmap.netlify.app/](https://jnvmap.netlify.app/)
 
-## Learn More
+- 📑 **Full Analysis Document (Google Docs)**:  
+  [JNV Psychometric & Demographic Analysis Report](https://docs.google.com/document/d/131PG3HHTdF2GdG_S0-_kRmmAXH0lAvN33oBfN2I5l3I/edit?usp=sharing)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Key Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🔍 Extracted 653 JNVs through API automation.
+- 🧹 Cleaned and merged 2 independent datasets (institutional + psychometric).
+- 🗺️ Mapped schools interactively by Latitude/Longitude.
+- 📈 Analyzed Personality, Interests, and Abilities across age, grade, district, and region.
+- 👩‍🏫 Provided insights to help align student traits with career pathways.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+| Layer                   | Technologies Used                          |
+|------------------------|---------------------------------------------|
+| Data Extraction        | Python, API calls (UDISE+ portal)           |
+| Data Processing        | Pandas, NumPy                               |
+| Visualization          | Power BI, Matplotlib, Seaborn               |
+| Frontend Map App       | React, Next.js, Google Maps API             |
+| Deployment             | Netlify                                     |
+
+---
+
+
+
+---
+
+## 📘 Documentation
+
+Full project phases are explained in detail, including:
+
+- Data pipeline creation
+- API reverse engineering
+- Psychometric data transformations
+- Region-wise traits summary
+- Interest and career mapping
+
+Read full doc:  
+🔗 [JNV Project Full Report (PDF)](https://docs.google.com/document/d/131PG3HHTdF2GdG_S0-_kRmmAXH0lAvN33oBfN2I5l3I/edit?usp=sharing)
+
+---
+
+## 📁 Repository Structure
+
+```plaintext
+|-- data/                      # Raw and cleaned datasets
+|-- notebooks/                 # Jupyter analysis notebooks
+|-- src/                       # Scripts for API extraction, cleaning, merging
+|-- dashboard/                 # Power BI files
+|-- frontend/                  # React code for JNV map
+|-- docs/                      # PDFs and presentations
+|-- README.md
